@@ -1,0 +1,305 @@
+{
+  "address": "0xEe88575E7E010Fb208404Ef1D60282c0512Bf932",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract Lair",
+          "name": "_lair",
+          "type": "address"
+        },
+        {
+          "internalType": "address[2]",
+          "name": "_parents",
+          "type": "address[2]"
+        },
+        {
+          "internalType": "string",
+          "name": "_name",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "trainer",
+          "type": "address"
+        }
+      ],
+      "name": "Birth",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "trainer",
+          "type": "address"
+        }
+      ],
+      "name": "Tribute",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "born",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "creationTimestamp",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getTributes",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "giveBirth",
+      "outputs": [
+        {
+          "internalType": "contract Dragon",
+          "name": "dragon",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "giveTribute",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "isHatched",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "lair",
+      "outputs": [
+        {
+          "internalType": "contract Lair",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "name",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "parents",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "secondsUntilHatched",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x6ad13ba162df5bdaaad06a27045fe54d6b5b763a6872fe2209e790b4c7bb5468",
+  "receipt": {
+    "to": null,
+    "from": "0x89f41ba463bA837d53b4dB102CfCb6b44c789BCd",
+    "contractAddress": "0xEe88575E7E010Fb208404Ef1D60282c0512Bf932",
+    "transactionIndex": 3,
+    "gasUsed": "471066",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x00008718000004646cebca89d6b81e4cdf82693dde73bc25b31f0fe81822edae",
+    "transactionHash": "0x6ad13ba162df5bdaaad06a27045fe54d6b5b763a6872fe2209e790b4c7bb5468",
+    "logs": [],
+    "blockNumber": 16995559,
+    "cumulativeGasUsed": "703657",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [
+    "0x0000000000000000000000000000000000000000",
+    [
+      "0x0000000000000000000000000000000000000000",
+      "0x0000000000000000000000000000000000000000"
+    ],
+    "test"
+  ],
+  "solcInputHash": "c4413e400ce5fe2090f9b24ef8569743",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.6+commit.11564f7e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"contract Lair\",\"name\":\"_lair\",\"type\":\"address\"},{\"internalType\":\"address[2]\",\"name\":\"_parents\",\"type\":\"address[2]\"},{\"internalType\":\"string\",\"name\":\"_name\",\"type\":\"string\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"trainer\",\"type\":\"address\"}],\"name\":\"Birth\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"trainer\",\"type\":\"address\"}],\"name\":\"Tribute\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"born\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"creationTimestamp\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getTributes\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"giveBirth\",\"outputs\":[{\"internalType\":\"contract Dragon\",\"name\":\"dragon\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"giveTribute\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"isHatched\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"lair\",\"outputs\":[{\"internalType\":\"contract Lair\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"name\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"parents\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"secondsUntilHatched\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/Egg.sol\":\"Egg\"},\"evmVersion\":\"berlin\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/Dragon.sol\":{\"content\":\"// SPDX-License-Identifier: UNLICENSED\\npragma solidity 0.8.6;\\n\\nimport \\\"./Lair.sol\\\";\\nimport \\\"./Egg.sol\\\";\\n\\ncontract Dragon {\\n\\n    uint constant UPGRADE_COOLDOWN = 1 hours;\\n    uint constant INIT_BREED_COOLDOWN = 12 hours;\\n    uint constant BREED_PROPOSAL_TIMEOUT = 7 days;\\n    uint constant UPGRADE_FACTOR = 0.01 ether; // 1%\\n    uint constant UPGRADE_COST = 5;\\n    uint constant HEAL_COST = 1;\\n    uint constant ATTACK_COST = 5; \\n    uint constant BREED_COST = 10;\\n    uint constant STATS_TIME_DECAY_DENOM = 5 minutes; // stats decay by 1% every 5 minutes\\n\\n    address public egg;\\n    Lair public lair;\\n    address[2] public parents;\\n    string public name;\\n    uint public breedCount;\\n    uint lastUpgradeTimestamp;\\n    uint lastAttackTimestamp;\\n    uint lastBreedTimestamp;\\n    uint lastPlayTimestamp;\\n    uint lastFeedTimestamp;\\n    uint lastCleanTimestamp;\\n    uint lastSleepTimestamp;\\n    uint public health = 1000000;\\n    uint public maxHealth = 1000000;\\n    uint public damage = 20000;\\n    uint public attackCooldown = 1 hours;\\n    uint public healthRegeneration = 2000;\\n    uint8 hunger;\\n    uint8 uncleanliness;\\n    uint8 boredom;\\n    uint8 sleepiness;\\n    mapping (address => uint) public trust;\\n    mapping (Dragon => mapping (string => uint)) public breedProposals;\\n\\n    constructor(address _egg, Lair _lair, address[2] memory _parents, string memory _name) {\\n        egg = _egg;\\n        lair = _lair;\\n        parents = _parents;\\n        name = _name;\\n        lastUpgradeTimestamp = block.timestamp;\\n        lastAttackTimestamp = block.timestamp;\\n        lastPlayTimestamp = block.timestamp;\\n        lastFeedTimestamp = block.timestamp;\\n        lastCleanTimestamp = block.timestamp;\\n        lastSleepTimestamp = block.timestamp;\\n        lastBreedTimestamp = block.timestamp;\\n    }\\n\\n    modifier IfAlive {\\n        if(\\n            getHunger() > 100 &&\\n            getUncleanliness() > 100 &&\\n            getBoredom() > 100 &&\\n            getSleepiness() > 100) {\\n                selfdestruct(payable(0)); // die\\n            }\\n        _;\\n    }\\n\\n    modifier earnsTrust {\\n        trust[msg.sender]++;\\n        _;\\n    } \\n\\n    modifier consumesTrust {\\n        trust[msg.sender] -= UPGRADE_COST;\\n        _;\\n    }\\n\\n    /*\\n        Healing\\n    */\\n\\n    function heal() public IfAlive {\\n        trust[msg.sender] -= HEAL_COST;\\n        health = min(health + healthRegeneration, maxHealth);\\n        emit Heal(msg.sender);\\n    }\\n\\n    /*\\n        Attack\\n    */\\n    function canAttack() public view returns (bool) {\\n        return block.timestamp > lastAttackTimestamp + attackCooldown;\\n    }\\n\\n    function secondsUntilAttack() public view returns (uint) {\\n        if(canAttack()) return 0;\\n        return block.timestamp - lastAttackTimestamp + attackCooldown;\\n    }\\n\\n    function attack(Dragon target) public IfAlive {\\n        require(canAttack(), \\\"i can only attack every so often\\\");\\n        require(target != this, \\\"i can't attack myself\\\");\\n        trust[msg.sender] -= ATTACK_COST;\\n        require(lair.isDragon(target), \\\"target is not a dragon\\\");\\n        require(isContract(address(target)), \\\"target dragon is dead\\\");\\n        if(target.health() <= damage) { // target will die\\n            maxHealth = target.maxHealth() / 4; // consume 1/4 maxHealth\\n            damage = target.damage() / 4; // consume 1/4 damage\\n        }\\n        lastAttackTimestamp = block.timestamp;\\n        target.onAttack();\\n        emit Attack(msg.sender, address(target));\\n    }\\n\\n    function onAttack() public {\\n        Dragon attacker = Dragon(msg.sender);\\n        require(lair.isDragon(attacker), \\\"attacker is not a dragon\\\");\\n        if(health <= attacker.damage()) {\\n            selfdestruct(payable(0)); // die\\n        }\\n        health -= attacker.damage();\\n        emit Damaged(msg.sender);\\n    }\\n\\n    /*\\n        Breeding\\n    */\\n\\n    function proposeBreeding(Dragon parent, string memory childName) public IfAlive {\\n        trust[msg.sender] -= BREED_COST; // proposals also have cost\\n        require(lair.isDragon(parent), \\\"parent is not a dragon\\\");\\n        require(isContract(address(parent)), \\\"parent dragon is dead\\\");\\n        require(parent != this, \\\"i can't breed with myself\\\");\\n        require(bytes(childName).length > 0, \\\"my child must have a name\\\");\\n        parent.onBreedProposal(childName);\\n        emit ProposeBreed(msg.sender, address(parent), childName);\\n    }\\n\\n    function onBreedProposal(string memory childName) public {\\n        Dragon parent = Dragon(msg.sender);\\n        require(lair.isDragon(parent), \\\"parent is not a dragon\\\");\\n        breedProposals[parent][childName] = block.timestamp;\\n        emit ReceiveBreedProposal(msg.sender, childName);\\n    }\\n\\n    function canBreed() public view returns (bool) {\\n        return block.timestamp > lastBreedTimestamp + (INIT_BREED_COOLDOWN * (2**(breedCount + 1)));\\n    }\\n\\n    function secondsUntilBreed() public view returns (uint) {\\n        if(canBreed()) return 0;\\n        return block.timestamp - lastBreedTimestamp + (INIT_BREED_COOLDOWN * (2**(breedCount + 1)));\\n    }\\n\\n    function breed(Dragon parent, string memory childName) public IfAlive returns (Egg _egg) {\\n        trust[msg.sender] -= BREED_COST; // proposals also have cost\\n        uint proposalTimestamp = breedProposals[parent][childName];\\n        require(proposalTimestamp > 0, \\\"breed proposal does not exist\\\");\\n        require(block.timestamp < proposalTimestamp + BREED_PROPOSAL_TIMEOUT, \\\"breed proposal expired\\\");\\n        require(canBreed(), \\\"I can't breed yet\\\");\\n        address[2] memory _parents = [address(this), address(parent)];\\n        _egg = lair.fileEggCertificate(_parents, childName);\\n        lastBreedTimestamp = block.timestamp;\\n        breedProposals[parent][childName] = 0;\\n        breedCount++;\\n        emit Breed(msg.sender, address(parent), address(_egg), childName);\\n    }\\n\\n    /*\\n        Upgrades\\n    */\\n\\n    function canUpgrade() public view returns (bool) {\\n        return block.timestamp > lastUpgradeTimestamp + UPGRADE_COOLDOWN;\\n    }\\n\\n    function secondsUntilUpgrade() public view returns (uint) {\\n        if(canUpgrade()) return 0;\\n        return block.timestamp - lastUpgradeTimestamp + UPGRADE_COOLDOWN;\\n    }\\n\\n    function upgradeMaxHealth() public consumesTrust IfAlive {\\n        require(canUpgrade(), \\\"i can only upgrade every so often\\\");\\n        uint extraMaxHealth = maxHealth * UPGRADE_FACTOR / 1 ether;\\n        maxHealth = maxHealth + extraMaxHealth;\\n        lastUpgradeTimestamp = block.timestamp;\\n        emit UpgradeMaxHealth(msg.sender);\\n    }\\n\\n    function upgradeHealing() public consumesTrust IfAlive {\\n        require(canUpgrade(), \\\"i can only upgrade every so often\\\");\\n        uint extraHealPoints = healthRegeneration * UPGRADE_FACTOR / 1 ether;\\n        healthRegeneration = healthRegeneration + extraHealPoints;\\n        lastUpgradeTimestamp = block.timestamp;\\n        emit UpgradeHealing(msg.sender);\\n    }\\n\\n    function upgradeDamage() public consumesTrust IfAlive {\\n        require(canUpgrade(), \\\"i can only upgrade every so often\\\");\\n        uint addedDamage = damage * UPGRADE_FACTOR / 1 ether;\\n        damage = damage + addedDamage;\\n        lastUpgradeTimestamp = block.timestamp;\\n        emit UpgradeDamage(msg.sender);\\n    }\\n\\n    function upgradeAttackCooldown() public consumesTrust IfAlive {\\n        require(canUpgrade(), \\\"i can only upgrade every so often\\\");\\n        uint removedAttackCooldown = attackCooldown * UPGRADE_FACTOR / 1 ether;\\n        attackCooldown = attackCooldown - removedAttackCooldown;\\n        lastUpgradeTimestamp = block.timestamp;\\n        emit UpgradeAttackCooldown(msg.sender);\\n    }\\n\\n    /*\\n        Caretaking\\n    */\\n\\n    function feed() public earnsTrust IfAlive {\\n        require(getHunger() > 5, \\\"i dont need to eat\\\");\\n        require(getBoredom() < 80, \\\"im too tired to eat\\\");\\n        require(getUncleanliness() < 80, \\\"im feeling too gross to eat\\\");\\n        lastFeedTimestamp = block.timestamp;\\n        \\n        hunger = 0;\\n        boredom += 10;\\n        uncleanliness += 3;\\n        emit Feed(msg.sender);\\n    }\\n\\n    function clean() public earnsTrust IfAlive {\\n        require(getUncleanliness() > 5, \\\"i dont need a bath\\\");\\n        lastCleanTimestamp = block.timestamp;\\n        \\n        uncleanliness = 0;\\n        emit Clean(msg.sender);\\n    }\\n\\n    function play() public earnsTrust IfAlive {\\n        require(getBoredom() > 5, \\\"i dont wanna play\\\");\\n        require(getHunger() < 80, \\\"im too hungry to play\\\");\\n        require(getSleepiness() < 80, \\\"im too sleepy to play\\\");\\n        require(getUncleanliness() < 80, \\\"im feeling too gross to play\\\");\\n        lastPlayTimestamp = block.timestamp;\\n        \\n        boredom = 0;\\n        hunger += 10;\\n        sleepiness += 10;\\n        uncleanliness += 5;\\n        emit Play(msg.sender);\\n    }\\n\\n    function sleep() public earnsTrust IfAlive {\\n        require(getSleepiness() > 5, \\\"im not feeling sleepy\\\");\\n        require(getUncleanliness() < 80, \\\"im feeling too gross to sleep\\\");\\n        \\n        lastSleepTimestamp = block.timestamp;\\n        \\n        sleepiness = 0;\\n        uncleanliness += 5;\\n        emit Sleep(msg.sender);\\n    }\\n\\n    function getHunger() public view returns (uint256) {\\n        return hunger + ((block.timestamp - lastFeedTimestamp) / STATS_TIME_DECAY_DENOM);\\n    }\\n    \\n    function getUncleanliness() public view returns (uint256) {\\n        return uncleanliness + ((block.timestamp - lastCleanTimestamp) / STATS_TIME_DECAY_DENOM);\\n    }\\n    \\n    function getBoredom() public view returns (uint256) {\\n        return boredom + ((block.timestamp - lastPlayTimestamp) / STATS_TIME_DECAY_DENOM);\\n    }\\n    \\n    function getSleepiness() public view returns (uint256) {\\n        return sleepiness + ((block.timestamp - lastSleepTimestamp) / STATS_TIME_DECAY_DENOM);\\n    }\\n\\n    /*\\n        Utils\\n    */\\n\\n    function min(uint256 a, uint256 b) internal pure returns (uint256) {\\n        return a < b ? a : b;\\n    }\\n\\n    function isContract(address account) internal view returns (bool) {\\n        uint256 size;\\n        assembly {\\n            size := extcodesize(account)\\n        }\\n        return size > 0;\\n    }\\n\\n    event Play(address indexed trainer);\\n    event Feed(address indexed trainer);\\n    event Sleep(address indexed trainer);\\n    event Clean(address indexed trainer);\\n    event Heal(address indexed trainer);\\n    event UpgradeDamage(address indexed trainer);\\n    event UpgradeAttackCooldown(address indexed trainer);\\n    event UpgradeMaxHealth(address indexed trainer);\\n    event UpgradeHealing(address indexed trainer);\\n    event Attack(address indexed trainer, address indexed target);\\n    event Damaged(address indexed attacker);\\n    event ProposeBreed(address indexed trainer, address indexed parent, string childName);\\n    event ReceiveBreedProposal(address indexed parent, string childName);\\n    event Breed(address indexed trainer, address indexed parent, address egg, string childName);\\n}\",\"keccak256\":\"0xb518747e87dc1d422fcb1e86340604602808fad01f9c3d62dcf04ac9b12036e9\",\"license\":\"UNLICENSED\"},\"contracts/Egg.sol\":{\"content\":\"// SPDX-License-Identifier: UNLICENSED\\npragma solidity 0.8.6;\\n\\nimport \\\"./Lair.sol\\\";\\nimport \\\"./Dragon.sol\\\";\\n\\ncontract Egg {\\n\\n    string public name;\\n    uint constant BIRTH_DURATION = 24 hours;\\n    address[2] public parents;\\n    uint public creationTimestamp;\\n    bool public born;\\n    Lair public lair;\\n    uint tributes;\\n\\n    constructor(Lair _lair, address[2] memory _parents, string memory _name) {\\n        name = _name;\\n        parents = _parents;\\n        lair = _lair;\\n        creationTimestamp = block.timestamp;\\n    }\\n\\n    function isHatched() public view returns (bool) {\\n        return block.timestamp > creationTimestamp + BIRTH_DURATION - tributes;\\n    }\\n\\n    function secondsUntilHatched() public view returns (uint) {\\n        if(isHatched()) {\\n            return 0;\\n        }\\n\\n        return block.timestamp - creationTimestamp + BIRTH_DURATION - tributes;\\n    }\\n\\n    function getTributes() public view returns (uint) {\\n        return tributes / 100;\\n    }\\n\\n    function giveTribute() public {\\n        require(!isHatched(), \\\"im already hatched\\\");\\n        if(tributes + 100 <= BIRTH_DURATION) {\\n            tributes += 100;\\n            emit Tribute(msg.sender);\\n        }\\n    }\\n\\n    function giveBirth() public returns (Dragon dragon) {\\n        if(!born && isHatched()) {\\n            dragon = lair.fileDragonCertificate(parents, name);\\n            born = true;\\n            emit Birth(msg.sender);\\n        }\\n    }\\n\\n    event Tribute(address indexed trainer);\\n    event Birth(address indexed trainer);\\n\\n\\n}\",\"keccak256\":\"0x57934f3878e6a9f99857679ca2d78366b34c456a1a094aae211ac4e049c0423c\",\"license\":\"UNLICENSED\"},\"contracts/Lair.sol\":{\"content\":\"// SPDX-License-Identifier: UNLICENSED\\npragma solidity 0.8.6;\\n\\nimport \\\"./Dragon.sol\\\";\\nimport \\\"./Egg.sol\\\";\\n\\ncontract Lair {\\n\\n    Dragon[] dragons;\\n    mapping (Dragon => bool) public isDragon;\\n\\n    Egg[] eggs;\\n    mapping (Egg => bool) public isEgg;\\n\\n    constructor() {\\n        address[2] memory parents = [address(0), address(0)];\\n        Dragon leshner = new Dragon(address(0), this, parents, \\\"Leshner\\\");\\n        dragons.push(leshner);\\n        isDragon[leshner] = true;\\n        emit DragonBirth(address(leshner), parents[0], parents[1]);\\n        Dragon pleasr = new Dragon(address(0), this, parents, \\\"Pleasr\\\");\\n        dragons.push(pleasr);\\n        isDragon[pleasr] = true;\\n        emit DragonBirth(address(pleasr), parents[0], parents[1]);\\n    }\\n\\n    function fileDragonCertificate(address[2] memory parents, string memory name) external returns (Dragon dragon) {\\n        require(isEgg[Egg(msg.sender)]);\\n        dragon = new Dragon(msg.sender, this, parents, name);\\n        dragons.push(dragon);\\n        isDragon[dragon] = true;\\n        emit DragonBirth(address(dragon), parents[0], parents[1]);\\n    }\\n\\n    function fileEggCertificate(address[2] memory parents, string memory name) external returns (Egg egg)  {\\n        require(isDragon[Dragon(msg.sender)]);\\n        egg = new Egg(this, parents, name);\\n        eggs.push(egg);\\n        isEgg[egg] = true;\\n        emit EggBirth(address(egg), parents[0], parents[1]);\\n    }\\n\\n    function allDragons() public view returns (Dragon[] memory) {\\n        return dragons;\\n    }\\n\\n    function allEggs() public view returns (Egg[] memory) {\\n        return eggs;\\n    }\\n\\n    event DragonBirth(address indexed dragon, address indexed parent1, address indexed parent2);\\n    event EggBirth(address indexed egg, address indexed parent1, address indexed parent2);\\n}\",\"keccak256\":\"0xac617d756490aad077d009d1840dbd5b130d533819d2daa644a1c817cd79bb9a\",\"license\":\"UNLICENSED\"}},\"version\":1}",
+  "bytecode": "0x60806040523480156200001157600080fd5b5060405162000a1838038062000a18833981016040819052620000349162000213565b8051620000499060009060208401906200008d565b506200005960018360026200011c565b5050600480546001600160a01b0390931661010002610100600160a81b031990931692909217909155504260035562000398565b8280546200009b906200032c565b90600052602060002090601f016020900481019282620000bf57600085556200010a565b82601f10620000da57805160ff19168380011785556200010a565b828001600101855582156200010a579182015b828111156200010a578251825591602001919060010190620000ed565b506200011892915062000167565b5090565b82600281019282156200010a579160200282015b828111156200010a57825182546001600160a01b0319166001600160a01b0390911617825560209092019160019091019062000130565b5b8082111562000118576000815560010162000168565b600082601f8301126200019057600080fd5b81516001600160401b03811115620001ac57620001ac62000369565b6020620001c2601f8301601f19168201620002f9565b8281528582848701011115620001d757600080fd5b60005b83811015620001f7578581018301518282018401528201620001da565b83811115620002095760008385840101525b5095945050505050565b6000806000608084860312156200022957600080fd5b835162000236816200037f565b92506020603f850186136200024a57600080fd5b62000254620002ce565b8082870160608801898111156200026a57600080fd5b60005b60028110156200029757825162000284816200037f565b855293850193918501916001016200026d565b505191955090925050506001600160401b03811115620002b657600080fd5b620002c4868287016200017e565b9150509250925092565b604080519081016001600160401b0381118282101715620002f357620002f362000369565b60405290565b604051601f8201601f191681016001600160401b038111828210171562000324576200032462000369565b604052919050565b600181811c908216806200034157607f821691505b602082108114156200036357634e487b7160e01b600052602260045260246000fd5b50919050565b634e487b7160e01b600052604160045260246000fd5b6001600160a01b03811681146200039557600080fd5b50565b61067080620003a86000396000f3fe608060405234801561001057600080fd5b506004361061009e5760003560e01c8063898572a611610066578063898572a61461012c578063988a4aeb1461013f578063b331108614610147578063b769a35214610150578063df39e6e11461015a57600080fd5b806306fdde03146100a357806310c19421146100c1578063200dfb1b146100de5780633a55a52e1461010e5780638826a4ce14610124575b600080fd5b6100ab610162565b6040516100b89190610543565b60405180910390f35b6004546100ce9060ff1681565b60405190151581526020016100b8565b6004546100f69061010090046001600160a01b031681565b6040516001600160a01b0390911681526020016100b8565b6101166101f0565b6040519081526020016100b8565b610116610206565b6100f661013a36600461044d565b610244565b6100f6610264565b61011660035481565b61015861034a565b005b6100ce6103f6565b6000805461016f906105e9565b80601f016020809104026020016040519081016040528092919081815260200182805461019b906105e9565b80156101e85780601f106101bd576101008083540402835291602001916101e8565b820191906000526020600020905b8154815290600101906020018083116101cb57829003601f168201915b505050505081565b6000606460055461020191906105b0565b905090565b60006102106103f6565b1561021b5750600090565b600554620151806003544261023091906105d2565b61023a9190610598565b61020191906105d2565b6001816002811061025457600080fd5b01546001600160a01b0316905081565b60045460009060ff1615801561027d575061027d6103f6565b156103475760048054604051630f07663f60e21b81526101009091046001600160a01b031691633c1d98fc916102b99160019160009101610466565b602060405180830381600087803b1580156102d357600080fd5b505af11580156102e7573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061030b919061041d565b6004805460ff1916600117905560405190915033907f84ea27519105baaf292a59b8f83ca7970e016f3b4103a98636303cd5b844a48590600090a25b90565b6103526103f6565b156103985760405162461bcd60e51b81526020600482015260126024820152711a5b48185b1c9958591e481a185d18da195960721b604482015260640160405180910390fd5b6201518060055460646103ab9190610598565b116103f4576064600560008282546103c39190610598565b909155505060405133907f99015e2fe4075e29916c10571191d423b0c93358eaaf84bd6e6b2eb409f9297f90600090a25b565b60006005546201518060035461040c9190610598565b61041691906105d2565b4211905090565b60006020828403121561042f57600080fd5b81516001600160a01b038116811461044657600080fd5b9392505050565b60006020828403121561045f57600080fd5b5035919050565b60008184825b60028110156104945781546001600160a01b031683526020909201916001918201910161046c565b505060606040840152508254600090600181811c90808316806104b857607f831692505b60208084108214156104d857634e487b7160e01b86526022600452602486fd5b60608801849052608088018280156104f7576001811461050857610533565b60ff19871682528282019750610533565b60008b81526020902060005b8781101561052d57815484820152908601908401610514565b83019850505b50959a9950505050505050505050565b600060208083528351808285015260005b8181101561057057858101830151858201604001528201610554565b81811115610582576000604083870101525b50601f01601f1916929092016040019392505050565b600082198211156105ab576105ab610624565b500190565b6000826105cd57634e487b7160e01b600052601260045260246000fd5b500490565b6000828210156105e4576105e4610624565b500390565b600181811c908216806105fd57607f821691505b6020821081141561061e57634e487b7160e01b600052602260045260246000fd5b50919050565b634e487b7160e01b600052601160045260246000fdfea2646970667358221220b9d08a9c75c25a431417605a65bc4fe5c8ff8f735fad9da9bee8a21cee270c5864736f6c63430008060033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b506004361061009e5760003560e01c8063898572a611610066578063898572a61461012c578063988a4aeb1461013f578063b331108614610147578063b769a35214610150578063df39e6e11461015a57600080fd5b806306fdde03146100a357806310c19421146100c1578063200dfb1b146100de5780633a55a52e1461010e5780638826a4ce14610124575b600080fd5b6100ab610162565b6040516100b89190610543565b60405180910390f35b6004546100ce9060ff1681565b60405190151581526020016100b8565b6004546100f69061010090046001600160a01b031681565b6040516001600160a01b0390911681526020016100b8565b6101166101f0565b6040519081526020016100b8565b610116610206565b6100f661013a36600461044d565b610244565b6100f6610264565b61011660035481565b61015861034a565b005b6100ce6103f6565b6000805461016f906105e9565b80601f016020809104026020016040519081016040528092919081815260200182805461019b906105e9565b80156101e85780601f106101bd576101008083540402835291602001916101e8565b820191906000526020600020905b8154815290600101906020018083116101cb57829003601f168201915b505050505081565b6000606460055461020191906105b0565b905090565b60006102106103f6565b1561021b5750600090565b600554620151806003544261023091906105d2565b61023a9190610598565b61020191906105d2565b6001816002811061025457600080fd5b01546001600160a01b0316905081565b60045460009060ff1615801561027d575061027d6103f6565b156103475760048054604051630f07663f60e21b81526101009091046001600160a01b031691633c1d98fc916102b99160019160009101610466565b602060405180830381600087803b1580156102d357600080fd5b505af11580156102e7573d6000803e3d6000fd5b505050506040513d601f19601f8201168201806040525081019061030b919061041d565b6004805460ff1916600117905560405190915033907f84ea27519105baaf292a59b8f83ca7970e016f3b4103a98636303cd5b844a48590600090a25b90565b6103526103f6565b156103985760405162461bcd60e51b81526020600482015260126024820152711a5b48185b1c9958591e481a185d18da195960721b604482015260640160405180910390fd5b6201518060055460646103ab9190610598565b116103f4576064600560008282546103c39190610598565b909155505060405133907f99015e2fe4075e29916c10571191d423b0c93358eaaf84bd6e6b2eb409f9297f90600090a25b565b60006005546201518060035461040c9190610598565b61041691906105d2565b4211905090565b60006020828403121561042f57600080fd5b81516001600160a01b038116811461044657600080fd5b9392505050565b60006020828403121561045f57600080fd5b5035919050565b60008184825b60028110156104945781546001600160a01b031683526020909201916001918201910161046c565b505060606040840152508254600090600181811c90808316806104b857607f831692505b60208084108214156104d857634e487b7160e01b86526022600452602486fd5b60608801849052608088018280156104f7576001811461050857610533565b60ff19871682528282019750610533565b60008b81526020902060005b8781101561052d57815484820152908601908401610514565b83019850505b50959a9950505050505050505050565b600060208083528351808285015260005b8181101561057057858101830151858201604001528201610554565b81811115610582576000604083870101525b50601f01601f1916929092016040019392505050565b600082198211156105ab576105ab610624565b500190565b6000826105cd57634e487b7160e01b600052601260045260246000fd5b500490565b6000828210156105e4576105e4610624565b500390565b600181811c908216806105fd57607f821691505b6020821081141561061e57634e487b7160e01b600052602260045260246000fd5b50919050565b634e487b7160e01b600052601160045260246000fdfea2646970667358221220b9d08a9c75c25a431417605a65bc4fe5c8ff8f735fad9da9bee8a21cee270c5864736f6c63430008060033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 1217,
+        "contract": "contracts/Egg.sol:Egg",
+        "label": "name",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_string_storage"
+      },
+      {
+        "astId": 1224,
+        "contract": "contracts/Egg.sol:Egg",
+        "label": "parents",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_array(t_address)2_storage"
+      },
+      {
+        "astId": 1226,
+        "contract": "contracts/Egg.sol:Egg",
+        "label": "creationTimestamp",
+        "offset": 0,
+        "slot": "3",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 1228,
+        "contract": "contracts/Egg.sol:Egg",
+        "label": "born",
+        "offset": 0,
+        "slot": "4",
+        "type": "t_bool"
+      },
+      {
+        "astId": 1231,
+        "contract": "contracts/Egg.sol:Egg",
+        "label": "lair",
+        "offset": 1,
+        "slot": "4",
+        "type": "t_contract(Lair)1651"
+      },
+      {
+        "astId": 1233,
+        "contract": "contracts/Egg.sol:Egg",
+        "label": "tributes",
+        "offset": 0,
+        "slot": "5",
+        "type": "t_uint256"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_array(t_address)2_storage": {
+        "base": "t_address",
+        "encoding": "inplace",
+        "label": "address[2]",
+        "numberOfBytes": "64"
+      },
+      "t_bool": {
+        "encoding": "inplace",
+        "label": "bool",
+        "numberOfBytes": "1"
+      },
+      "t_contract(Lair)1651": {
+        "encoding": "inplace",
+        "label": "contract Lair",
+        "numberOfBytes": "20"
+      },
+      "t_string_storage": {
+        "encoding": "bytes",
+        "label": "string",
+        "numberOfBytes": "32"
+      },
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}

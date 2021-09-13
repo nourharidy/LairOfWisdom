@@ -1,0 +1,27 @@
+{
+  "name": "onchain-dragons",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nourharidy/onchain-dragons.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nourharidy/onchain-dragons/issues"
+  },
+  "homepage": "https://github.com/nourharidy/onchain-dragons#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "hardhat": "^2.6.4"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-etherscan": "^2.1.6",
+    "hardhat-deploy": "^0.9.1"
+  }
+}
