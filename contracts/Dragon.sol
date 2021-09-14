@@ -104,8 +104,8 @@ contract Dragon {
         require(lair.isDragon(target), "target is not a dragon");
         require(isContract(address(target)), "target dragon is dead");
         if(target.health() <= damage) { // target will die
-            maxHealth = target.maxHealth() / 4; // consume 1/4 maxHealth
-            damage = target.damage() / 4; // consume 1/4 damage
+            maxHealth += target.maxHealth() / 4; // consume 1/4 maxHealth
+            damage += target.damage() / 4; // consume 1/4 damage
         }
         lastAttackTimestamp = block.timestamp;
         target.onAttack();
