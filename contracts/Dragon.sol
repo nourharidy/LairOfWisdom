@@ -216,7 +216,7 @@ contract Dragon {
     */
 
     function feed() public earnsTrust IfAlive {
-        require(getHunger() > 5, "i dont need to eat");
+        require(getHunger() > 10, "i dont need to eat");
         require(getBoredom() < 80, "im too tired to eat");
         require(getUncleanliness() < 80, "im feeling too gross to eat");
         lastFeedTimestamp = block.timestamp;
@@ -228,7 +228,7 @@ contract Dragon {
     }
 
     function clean() public earnsTrust IfAlive {
-        require(getUncleanliness() > 5, "i dont need a bath");
+        require(getUncleanliness() > 10, "i dont need a bath");
         lastCleanTimestamp = block.timestamp;
         
         uncleanliness = 0;
@@ -236,7 +236,7 @@ contract Dragon {
     }
 
     function play() public earnsTrust IfAlive {
-        require(getBoredom() > 5, "i dont wanna play");
+        require(getBoredom() > 10, "i dont wanna play");
         require(getHunger() < 80, "im too hungry to play");
         require(getSleepiness() < 80, "im too sleepy to play");
         require(getUncleanliness() < 80, "im feeling too gross to play");
@@ -250,7 +250,7 @@ contract Dragon {
     }
 
     function sleep() public earnsTrust IfAlive {
-        require(getSleepiness() > 5, "im not feeling sleepy");
+        require(getSleepiness() > 10, "im not feeling sleepy");
         require(getUncleanliness() < 80, "im feeling too gross to sleep");
         
         lastSleepTimestamp = block.timestamp;
