@@ -7,7 +7,7 @@ import "./Egg.sol";
 contract Dragon {
 
     uint constant UPGRADE_COOLDOWN = 1 hours;
-    uint constant INIT_BREED_COOLDOWN = 12 hours;
+    uint constant INIT_BREED_COOLDOWN = 6 hours;
     uint constant BREED_PROPOSAL_TIMEOUT = 7 days;
     uint constant UPGRADE_FACTOR = 0.01 ether; // 1%
     uint constant UPGRADE_COST = 5;
@@ -144,12 +144,12 @@ contract Dragon {
     }
 
     function canBreed() public view returns (bool) {
-        return block.timestamp > lastBreedTimestamp + (INIT_BREED_COOLDOWN * (2**(breedCount + 1)));
+        return block.timestamp > lastBreedTimestamp + (INIT_BREED_COOLDOWN * (2**breedCount));
     }
 
     function secondsUntilBreed() public view returns (uint) {
         if(canBreed()) return 0;
-        return block.timestamp - lastBreedTimestamp + (INIT_BREED_COOLDOWN * (2**(breedCount + 1)));
+        return block.timestamp - lastBreedTimestamp + (INIT_BREED_COOLDOWN * (2**breedCount));
     }
 
     function breed(Dragon parent, string memory childName) public IfAlive returns (Egg _egg) {
