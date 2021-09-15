@@ -94,7 +94,7 @@ contract Dragon {
 
     function secondsUntilAttack() public view returns (uint) {
         if(canAttack()) return 0;
-        return block.timestamp - lastAttackTimestamp + attackCooldown;
+        return lastAttackTimestamp + attackCooldown - block.timestamp;
     }
 
     function attack(Dragon target) public IfAlive {
@@ -149,7 +149,7 @@ contract Dragon {
 
     function secondsUntilBreed() public view returns (uint) {
         if(canBreed()) return 0;
-        return block.timestamp - lastBreedTimestamp + (INIT_BREED_COOLDOWN * (2**breedCount));
+        return lastBreedTimestamp + (INIT_BREED_COOLDOWN * (2**breedCount)) - block.timestamp;
     }
 
     function breed(Dragon parent, string memory childName) public IfAlive returns (Egg _egg) {
@@ -176,7 +176,7 @@ contract Dragon {
 
     function secondsUntilUpgrade() public view returns (uint) {
         if(canUpgrade()) return 0;
-        return block.timestamp - lastUpgradeTimestamp + UPGRADE_COOLDOWN;
+        return lastUpgradeTimestamp + UPGRADE_COOLDOWN - block.timestamp;
     }
 
     function upgradeMaxHealth() public consumesTrust IfAlive {

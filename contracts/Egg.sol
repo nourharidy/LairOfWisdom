@@ -30,7 +30,7 @@ contract Egg {
             return 0;
         }
 
-        return block.timestamp - creationTimestamp + BIRTH_DURATION - tributes;
+        return creationTimestamp + BIRTH_DURATION - tributes - block.timestamp;
     }
 
     function getTributes() public view returns (uint) {
