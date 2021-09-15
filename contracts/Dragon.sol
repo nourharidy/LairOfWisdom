@@ -217,8 +217,6 @@ contract Dragon {
 
     function feed() public earnsTrust IfAlive {
         require(getHunger() > 10, "i dont need to eat");
-        require(getBoredom() < 80, "im too tired to eat");
-        require(getUncleanliness() < 80, "im feeling too gross to eat");
         lastFeedTimestamp = block.timestamp;
         
         hunger = 0;
